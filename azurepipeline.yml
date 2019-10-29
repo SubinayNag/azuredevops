@@ -7,7 +7,7 @@ pool:
 steps:
   - task: CmdLine@2
     inputs:
-      script: 'curl -u admin:admin -X POST 'http://ec2-18-224-155-110.us-east-2.compute.amazonaws.com:9000/api/projects/create?key=key1&name=name1' 
+      script: 'curl -X POST 'http://ec2-18-224-155-110.us-east-2.compute.amazonaws.com:9000/api/projects/create?key=Ktest5&name=Ntest5' -u "admin:admin" -H 'Content-Type: application/json'' 
       failOnStandardError: true
   
   - task: Maven@3
